@@ -1,0 +1,41 @@
+1. Download and Install Git : https://git-scm.com/downloads
+2. Check if git is installed: git --version
+3. Configure username: git config --global user.name "Square Brackets"
+4. Configure email: git config --global user.name "Square Brackets"
+5. Setup default branch as main : git config --global init.defaultBranch main
+6. Basic commands:
+git init:  Initialize a new local git repo in current directory
+git add <file> : add file to the staging area, preparing it for a commit
+git add . : add files to the staging area, preparing it for a commit
+git status: before committing, check which files are modified, staged or untracked
+git commit -m "Initial commit"
+git log --oneline --graph --decorate --all
+
+Commands step by step:
+git init
+
+git init -b main
+Makes the current folder a Git repo with main as default branch
+
+echo "# Shopping App" > README.md
+
+git add .
+stage everything
+
+git commit -m "Initial commit"
+
+git commit --amend -m "Typo: My First commit"
+Fix the message Typo
+
+Show the history - Log
+git log --oneline --graph --decorate --all
+
+git diff
+Difference b/w working tree and index
+
+git diff --staged
+Difference b/w HEAD and index
+
+git show ac34395 --name-only
+Look inside one paritcular commit
+
